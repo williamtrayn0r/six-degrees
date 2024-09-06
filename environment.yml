@@ -1,0 +1,8 @@
+name: six-degrees
+dependencies:
+  - numpy
+  - pandas
+
+pip3:
+  - langchain_community
+  - wikipedia
