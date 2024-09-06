@@ -49,7 +49,7 @@ def get_player_unique_teams(player_name):
     
 def get_players_clubs_to_yml():
 
-    players_file = open('players.txt', 'r', encoding=encoding)
+    players_file = open('data/players.txt', 'r', encoding=encoding)
     players = players_file.read().split('\n')
 
     players_dict = {}
@@ -62,7 +62,7 @@ def get_players_clubs_to_yml():
             players_dict[player] = unique_teams
             print(unique_teams)
             
-    with open('player_clubs.yaml', 'w+', encoding=encoding) as f:
+    with open('data/player_clubs.yml', 'w+', encoding=encoding) as f:
         yaml.dump(players_dict, f)
 
 if __name__=='__main__':
